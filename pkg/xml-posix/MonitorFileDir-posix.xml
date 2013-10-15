@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc" xmlns="http://www.uptimesoftware.com/erdc/erdc" xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="other">
+	<class>File and Directory</class>
+	<exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
+	<elements>
+		<element name="process" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>scripts/MonitorFileAndDirectory/filedircheck-ms.sh</default_value>
+			<short_description>Script Name</short_description>
+			<long_description>Name of the script to be executed by up.time </long_description>
+			<validation_rule>
+				<alphanumeric/>
+			</validation_rule>
+			<error_message>
+				<alphanumeric>required field</alphanumeric>
+			</error_message>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="password" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value></default_value>
+			<short_description> Windows Agent Password </short_description>
+			<long_description> Ignore if using Linux/Solaris/AIX agents </long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<password/>
+			</gui_type>
+		</element>
+		<element name="directory" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value/>
+			<short_description> Directory </short_description>
+			<long_description>  Directory to look for files </long_description>
+				<validation_rule>
+					<alphanumeric/>
+				</validation_rule>
+				<error_message>
+					<alphanumeric>required field</alphanumeric>
+				</error_message>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="searchsubdirs" parameter_type="input" data_type="string" gui_basic="1" range_type="0" units="">
+			<control_options>size:40</control_options>
+			<default_value/>
+			<short_description>Search Sub Directories</short_description>
+			<long_description>Search through sub directories recursively </long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<boolean/>
+			</gui_type>
+		</element>
+		<element name="file" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value/>
+			<short_description> File(s) (RegExp) </short_description>
+			<long_description>  File(s) (Regular-expression compatible) </long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="TotalSizeB" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="Bytes">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Largest File Size (Bytes)</short_description>
+			<long_description> Largest File Size (in Bytes)</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="TotalSizeKB" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="KB">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Largest File Size (KB)</short_description>
+			<long_description> Largest File Size (in KiloBytes)</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="TotalSizeMB" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="MB">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Largest File Size (MB)</short_description>
+			<long_description> Largest File Size (in MegaBytes)</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="TotalSizeGB" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="GB">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Largest File Size (GB)</short_description>
+			<long_description> Largest File Size (in GigaBytes)</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="TotalSizeTB" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="TB">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Largest File Size (TB)</short_description>
+			<long_description> Largest File Size (in TeraBytes)</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="TotalFiles" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="Number of Files in Dir">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Number of Matched Files in Directory</short_description>
+			<long_description> Total Number of Matched Files found in Directory (including sub directories) </long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="MinutesOld" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="Minutes Old">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Minutes Old</short_description>
+			<long_description>Number of minutes old the newest file is</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="HoursOld" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="Hours Old">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Hours Old</short_description>
+			<long_description>Number of hours old the newest file is</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="DaysOld" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0" units="Days Old">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Days Old</short_description>
+			<long_description>Number of days old the newest file is</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<decimal/>
+			</gui_type>
+		</element>
+		<element name="timer" parameter_type="output" data_type="integer" gui_basic="0" range_type="0" units="ms">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Response time</short_description>
+			<long_description>Response time in ms</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+	</elements>
+	<help>some help</help>
+</uptime>

@@ -1,0 +1,8 @@
+name=File & Directory Monitor
+version=3.4
+platforms=windows linux solaris
+description=Monitor the number of files, largest size, and how old the files are in a directory.
+requiresAgentScript=true
+restartCore=false
+onUpgradeRemoveFiles=true
+onUpgradeRemoveMonitors=true
