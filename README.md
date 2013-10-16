@@ -1,9 +1,15 @@
 # File and Directory Monitor
-## Tags : plugin   logs  
 
-## Category: plugin
+See http://uptimesoftware.github.io for more information.
 
-##Version Compatibility<br/>Module Name</th><th>up.time Monitoring Station Version</th>
+### Tags 
+ plugin   logs  
+
+### Category
+
+{ page.category }}
+
+### Version Compatibility
 
 
   
@@ -11,11 +17,19 @@
   
 
 
-### Description: This monitor can report the following Directory information: - Number of files matching a certain regular expression; - Largest file size that match that expression; - Age (in minutes) of the most recent file; - Most recent date of the latest file; - Most recent time of the latest file; - File name that was most recently modified
+### Description
+This monitor can report the following Directory information: - Number of files matching a certain regular expression; - Largest file size that match that expression; - Age (in minutes) of the most recent file; - Most recent date of the latest file; - Most recent time of the latest file; - File name that was most recently modified
 
-### Supported Monitoring Stations: 7.2, 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
-### Supported Agents: Windows, Solaris, Linux, AIX
-### Installation Notes: <p><a href="https://github.com/uptimesoftware/uptime-plugin-manager">Install using the up.time Plugin Manager</a></p>
+
+### Supported Monitoring Stations
+
+7.2, 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
+
+### Supported Agents
+Windows, Solaris, Linux, AIX
+
+### Installation Notes
+<p><a href="https://github.com/uptimesoftware/uptime-plugin-manager">Install using the up.time Plugin Manager</a></p>
 
 <p>For the agent files, follow the instructions below:</p>
 
@@ -37,9 +51,18 @@ filedircheck /opt/uptime-agent/scripts/filedircheck-nix-agent.pl</p>
 Command Name: filedircheck
 Path to Script: cscript //nologo "C:\Program Files\uptime software\up.time agent\scripts\filedircheck-win-agent.vbs"</p>
 
-### Dependencies: <p>n/a</p>
 
-### Input Variables: * Directory* Search Sub Directories* File(s) (RegExp)
-### Output Variables: * Size of File (Bytes)* Size of File (KB)* Size of File (MB)* Size of File (GB)* Size of File (TB)* Number of Matched Files in Directory* Minutes Old* Hours Old* Days Old* Response time
-### Languages Used: * Shell/Batch* PHP* Perl
+### Dependencies
+<p>n/a</p>
+
+
+### Input Variables
+* Directory* Search Sub Directories* File(s) (RegExp)
+
+### Output Variables
+
+* Size of File (Bytes)* Size of File (KB)* Size of File (MB)* Size of File (GB)* Size of File (TB)* Number of Matched Files in Directory* Minutes Old* Hours Old* Days Old* Response time
+
+### Languages Used
+* Shell/Batch* PHP* Perl
 
