@@ -53,7 +53,7 @@ sub search {
 
 
 
-my @values    = split('#', $ARGV[1]);
+my @values    = split('#', $ARGV[0]);
 my $recursive = $values[0];
 my $dir       = $values[1];
 my $file      = $values[2];
