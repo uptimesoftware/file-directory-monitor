@@ -13,7 +13,8 @@ plugin
 
 
   
-* Enhacned Log File Monitor 2.2 - 7.2, 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
+* File and Directory Monitor 3.0 - 7.3
+* File and Directory Monitor 2.2 - 7.2, 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
   
 
 
@@ -23,7 +24,7 @@ This monitor can report the following Directory information: - Number of files m
 
 ### Supported Monitoring Stations
 
-7.2, 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
+7.3, 7.2, 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
 
 ### Supported Agents
 Windows, Solaris, Linux, AIX
