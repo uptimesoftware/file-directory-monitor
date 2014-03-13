@@ -1,3 +1,3 @@
 @ECHO OFF
 set PHPDIR=..\..\apache\php\
-"%PHPDIR%\php.exe" filedircheck-ms.php %1
+"%PHPDIR%\php.exe" ..\..\plugins\scripts\MonitorFileAndDirectory\filedircheck-ms.php %1
