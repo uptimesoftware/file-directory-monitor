@@ -13,7 +13,7 @@ plugin
 
 
   
-* File and Directory Monitor 4.0 - 7.3
+* File and Directory Monitor 4.1 - 7.3
 * File and Directory Monitor 3.3 - 7.2, 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
   
 
