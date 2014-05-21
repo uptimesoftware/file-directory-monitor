@@ -15,4 +15,4 @@ a. Place the filedircheck-win-agent.vbs file in the uptime agent directory in a 
 b. Open the uptime Agent Console (Start > up.time agent) and click on Advanced > Custom Scripts
 c. Enter the following:
 Command Name: filedircheck
-Path to Script: cscript //nologo "C:\Program Files\uptime software\up.time agent\scripts\filedircheck-win-agent.vbs"
+Path to Script: cscript //nologo "C:\Program Files (x86)\uptime software\up.time agent\scripts\filedircheck-win-agent.vbs"
