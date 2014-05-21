@@ -2,7 +2,7 @@
 <uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  version="4.0" target_grouping="other">
 	<class>File and Directory</class>
 	<exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
-	<erdc_version>4.1</erdc_version>
+	<erdc_version>4.11</erdc_version>
 	<category>Operating System Monitors</category>
 	<category_related></category_related>
 	<grid_info>

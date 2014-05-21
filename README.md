@@ -13,7 +13,7 @@ plugin
 
 
   
-* File and Directory Monitor 4.1 - 7.3
+* File and Directory Monitor 4.11 - 7.3
 * File and Directory Monitor 3.3 - 7.2, 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
   
 
@@ -50,7 +50,7 @@ filedircheck /opt/uptime-agent/scripts/filedircheck-nix-agent.pl</p>
 - Open the uptime Agent Console (Start > up.time agent) and click on Advanced > Custom Scripts
 - Enter the following:
 Command Name: filedircheck
-Path to Script: cscript //nologo "C:\Program Files\uptime software\up.time agent\scripts\filedircheck-win-agent.vbs"</p>
+Path to Script: cscript //nologo "C:\Program Files (x86)\uptime software\up.time agent\scripts\filedircheck-win-agent.vbs"</p>
 
 
 ### Dependencies
