@@ -52,8 +52,16 @@ sub search {
 
 
 
+#on some OS/shell types you may need to change the below line to use $ARGV[0]
+my $params = $ARGV[1];
+my @values    = split('#', $params);
+my $values_length = @values;
 
-my @values    = split('#', $ARGV[0]);
+if ($values_length <= 1 )
+{
+  die "Unable to split first arg into params: @ARGV \n";
+}
+
 my $recursive = $values[0];
 my $dir       = $values[1];
 my $file      = $values[2];
