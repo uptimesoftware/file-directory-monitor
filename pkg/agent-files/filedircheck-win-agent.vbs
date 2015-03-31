@@ -157,8 +157,10 @@ Function DoDirectoryCheck(directory, filetocheck, recursive)
 			wscript.echo("MinutesOld " & minutesOld)
 			wscript.echo("HoursOld "   & hoursOld)
 			wscript.echo("DaysOld "    & daysOld)
-			wscript.echo("TotalFiles " & dfi.TotalFiles)
 		End If
+		
+		wscript.echo("TotalFiles " & dfi.TotalFiles)
+		
 	End If
 End Function : Private Sub CatchErr : If Err.Number = 0 Then Exit Sub
 	Select Case Err.Number
