@@ -149,5 +149,6 @@ else {
   print "MinutesOld $minutesold\n";
   print "HoursOld $hoursold\n";
   print "DaysOld $daysold\n";
-  print "TotalFiles $totalfiles\n";
 }
+
+print "TotalFiles $totalfiles\n";
