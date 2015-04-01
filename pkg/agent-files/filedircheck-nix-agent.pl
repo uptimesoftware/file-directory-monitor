@@ -96,10 +96,10 @@ else {
 # handle the condition if there are no files
 if ($totalfiles == 0) {
   if (defined($file)) {
-    print "Message No files were matched with '$file'.";
+    print "Message No files were matched with '$file'.\n";
   }
   else {
-    print "Message No files were found in '$dir'.";
+    print "Message No files were found in '$dir'.\n";
   }
 }
 else {
